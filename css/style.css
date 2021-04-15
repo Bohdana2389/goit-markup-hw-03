@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
 --main-text-color:#757575;
 --title-color:#FFFFFF;
@@ -17,6 +26,7 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 }
+
 .web{
 color:var(--accent-color);
 }
@@ -61,8 +71,9 @@ line-height: 1.1;
 letter-spacing: 0.03em;
 color:var(--main-text-color);
 }
-.head .link .current {
-color var (--accent-color);
+
+.head .link.current {
+color: var(--accent-color);
 }
 
 .contacts{
@@ -75,6 +86,11 @@ color:var(--main-text-color);
 }
 
 .btn{
+border: 1px solid var(--accent-color);
+border-radius: 4px;
+padding: 10px 32px;
+min-width: 136px; 
+text-align: center;
 font-family:var(--main-font);
 font-weight: bold;
 font-size: 16px;
@@ -88,6 +104,11 @@ background-color:var(--accent-color);
 }
 
 .button {
+border: 1px solid transparent;
+border-radius: 4px;
+padding: 6px 22px;
+min-width: 73px; 
+text-align: center;
 font-family:var(--main-font);
 font-weight: 500;
 font-size: 16px;
@@ -116,6 +137,8 @@ text-decoration: none;
 }
 
 .page-title {
+margin-top: 0;
+margin-bottom: 30px;
 font-family:var(--main-font);
 font-weight: 900;
 font-size: 44px;
@@ -208,4 +231,12 @@ font-size: 14px;
 line-height: 1.71x;
 letter-spacing: 0.03em;
 color:var (var(--title-color));
+}
+
+.container{
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
 }
