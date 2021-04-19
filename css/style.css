@@ -63,7 +63,6 @@ body {
 
 .header-borders {
   border-bottom: 1px solid #ececec;
-  border: 1px solid #ECECEC;
 }
 
 .head {
@@ -213,6 +212,7 @@ ul {
 }
 
 .label-text {
+  padding-bottom: 10px;
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 14px;
@@ -260,10 +260,6 @@ ul {
 }
 
 .page {
-  padding-left: 24px;
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-bottom: 4px;
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 18px;
@@ -273,9 +269,6 @@ ul {
 }
 
 .site {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
   font-family: var(--main-font);
   font-weight: normal;
   font-size: 16px;
@@ -298,7 +291,7 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var (var(--title-color));
+  color: var(--title-color);
 }
 
 .container {
@@ -311,12 +304,11 @@ ul {
 
 .advantages{
   padding-top: 94px;
-  background-color: var(--background-color);
 }
 
 .section {
   padding-top: 94px;
-  background-color: var(--background-color);
+  padding-bottom: 94px;
 }
 
 .images {
@@ -341,6 +333,7 @@ ul {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .dark-fone {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -349,7 +342,8 @@ ul {
 }
 
 .cont-clr{
-  color: var(--main-text-color);
+  color: rgba(255, 255, 255, 0.6);
+  
 }
 
 .row {
@@ -389,7 +383,18 @@ ul {
   padding-top: 0;
   margin-bottom: 20px;
 }
+
+.indent-footer{
+  display: block;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-bottom: 9px; 
+}
 .description {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   background: #ffffff;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -419,4 +424,3 @@ img {
 h2 {
   margin-top: 0;
   margin-bottom: 0;
-
